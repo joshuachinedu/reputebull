@@ -2,8 +2,8 @@ import Link from 'next/link';
 import { ArrowRight, Utensils, Landmark, Users, Briefcase, Heart, ShoppingCart, Building2 } from 'lucide-react';
 
 export const metadata = {
-  title: 'Industries We Serve | Digital Marketing Solutions for Every Business',
-  description: 'Explore our digital marketing services tailored for restaurants, political campaigns, healthcare, e-commerce, real estate, and more industries in Nigeria.',
+'GetValue Industries | Digital Marketing Solutions for Every Business',
+'GetValue: Explore our digital marketing services tailored for restaurants, political campaigns, healthcare, e-commerce, real estate, and more industries in Nigeria.',
 };
 
 const industries = [

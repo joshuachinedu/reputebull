@@ -11,18 +11,18 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center space-x-2 mb-6">
               <Image 
-                src="/logo.png" 
-                alt="Marketing by Joshua" 
+                src="/gv-logo.png" 
+                alt="GetValue" 
                 width={40} 
                 height={40} 
                 className="rounded-lg"
               />
               <div>
-                <div className="font-bold text-lg leading-tight">Marketing by Joshua</div>
+                <div className="font-bold text-lg leading-tight">GetValue</div>
               </div>
             </div>
             <p className="text-gray-400 text-sm">
-              Revenue-focused digital marketing for ambitious Nigerian businesses.
+              Revenue-focused digital marketing for ambitious Nigerian businesses at getvalue.online.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-emerald-400 transition-colors">
@@ -83,8 +83,11 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="w-5 h-5 flex-shrink-0 text-emerald-400" />
-                <a href="mailto:marketingbyjoshua@gmail.com" className="hover:text-emerald-400 transition-colors text-sm">
-                  marketingbyjoshua@gmail.com
+                <a href="mailto:getvalue.online@gmail.com" className="hover:text-emerald-400 transition-colors text-sm">
+                  getvalue.online@gmail.com
+                </a>
+                <a href="mailto:joshuadabs@gmail.com" className="hover:text-emerald-400 transition-colors text-sm">
+                  joshuadabs@gmail.com
                 </a>
               </li>
             </ul>
@@ -93,7 +96,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
-          <p>© 2026 Marketing by Joshua. All rights reserved.</p>
+          <p>© 2026 GetValue. All rights reserved.</p>
           <div className="flex gap-6">
             <Link href="/privacy" className="hover:text-emerald-400 transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-emerald-400 transition-colors">Terms of Service</Link>

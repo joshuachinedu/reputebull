@@ -35,14 +35,14 @@ export default function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <Image 
-              src="/logo.png" 
-              alt="Marketing by Joshua" 
+src="/gv-logo.png" 
+alt="GetValue" 
               width={40} 
               height={40} 
               className="rounded-lg"
             />
             <div>
-              <div className="font-bold text-lg leading-tight">Marketing by Joshua</div>
+              <div className="font-bold text-lg leading-tight">GetValue</div>
             </div>
           </Link>
 
