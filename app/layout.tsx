@@ -8,19 +8,19 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-space' });
 
 export const metadata: Metadata = {
-title: 'GetValue | SEO, Web Development & Paid Ads in Abuja',
-description: 'GetValue: Revenue-focused digital marketing for restaurants, hotels, and pharmacies in Nigeria. SEO, Google Ads, web development, and local SEO services that drive measurable results.',
-keywords: 'digital marketing Abuja, GetValue, SEO Nigeria, Google Ads Abuja, web development Nigeria, restaurant marketing, hotel digital marketing, pharmacy SEO',
-authors: [{ name: 'GetValue' }],
+title: 'REPUTEBULL | Reputation-First Digital Marketing',
+description: 'REPUTEBULL: Revenue-focused digital marketing and reputation management for businesses, public figures, and leaders worldwide.',
+keywords: 'digital marketing, reputation management, SEO, web development, Abuja, global',
+authors: [{ name: 'REPUTEBULL' }],
   icons: {
-    icon: '/logo.png',
-    apple: '/gv-logo.png',
+    icon: 'https://i.imgur.com/muXihmh.png',
+    apple: 'https://i.imgur.com/muXihmh.png',
   },
   openGraph: {
-    title: 'Marketing by Joshua',
-    description: 'Strategic digital marketing that delivers measurable results for Nigerian businesses',
+    title: 'REPUTEBULL Case Studies & Services',
+    description: 'REPUTEBULL delivers measurable growth through SEO, web development, ads and reputation management.',
     type: 'website',
-    images: ['/gv-logo.png'],
+    images: ['https://i.imgur.com/muXihmh.png'],
   }
 };
 

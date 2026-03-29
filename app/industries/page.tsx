@@ -2,8 +2,8 @@ import Link from 'next/link';
 import { ArrowRight, Utensils, Landmark, Users, Briefcase, Heart, ShoppingCart, Building2 } from 'lucide-react';
 
 export const metadata = {
-'GetValue Industries | Digital Marketing Solutions for Every Business',
-'GetValue: Explore our digital marketing services tailored for restaurants, political campaigns, healthcare, e-commerce, real estate, and more industries in Nigeria.',
+  title: 'REPUTEBULL Industries | Reputation Management & Digital Marketing',
+  description: 'REPUTEBULL: Explore our digital marketing and reputation management services tailored for restaurants, politics, healthcare, e-commerce, real estate, and more industries worldwide.',
 };
 
 const industries = [
@@ -15,9 +15,16 @@ const industries = [
     color: 'emerald'
   },
   {
+    slug: 'hotel-spa',
+    icon: Landmark,
+    title: 'Hotel/Spa & Hospitality',
+    description: 'Maximize occupancy and guest satisfaction with booking funnels, reputation, and loyalty marketing.',
+    color: 'blue'
+  },
+  {
     slug: 'politicians',
     icon: Landmark,
-    title: 'Politicians & Public Office',
+    title: 'Politics & Public Office',
     description: 'Win elections with campaign websites, donation systems, voter engagement, and targeted political advertising.',
     color: 'blue'
   },

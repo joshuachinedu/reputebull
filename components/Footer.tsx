@@ -11,18 +11,18 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center space-x-2 mb-6">
               <Image 
-                src="/gv-logo.png" 
-                alt="GetValue" 
+                src="https://i.imgur.com/sk2GaLW.png" 
+                alt="REPUTEBULL" 
                 width={40} 
                 height={40} 
                 className="rounded-lg"
               />
               <div>
-                <div className="font-bold text-lg leading-tight">GetValue</div>
+                <div className="font-bold text-lg leading-tight">REPUTEBULL</div>
               </div>
             </div>
             <p className="text-gray-400 text-sm">
-              Revenue-focused digital marketing for ambitious Nigerian businesses at getvalue.online.
+              Revenue-focused digital marketing and reputation management for global brands and leaders.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-emerald-400 transition-colors">
@@ -53,11 +53,12 @@ export default function Footer() {
           <div>
             <h3 className="font-bold text-lg mb-4">Industries</h3>
             <ul className="space-y-3 text-gray-400">
+              <li><Link href="/industries/politicians" className="hover:text-emerald-400 transition-colors">Politics</Link></li>
+              <li><Link href="/industries/hotels" className="hover:text-emerald-400 transition-colors">Hospitality</Link></li>
               <li><Link href="/industries/restaurants" className="hover:text-emerald-400 transition-colors">Restaurants</Link></li>
-              <li><Link href="/industries/hotels" className="hover:text-emerald-400 transition-colors">Hotels</Link></li>
-              <li><Link href="/industries/pharmacies" className="hover:text-emerald-400 transition-colors">Pharmacies</Link></li>
-              <li><Link href="/case-studies" className="hover:text-emerald-400 transition-colors">Case Studies</Link></li>
-              <li><Link href="/blog" className="hover:text-emerald-400 transition-colors">Blog</Link></li>
+              <li><Link href="/industries/healthcare" className="hover:text-emerald-400 transition-colors">Healthcare</Link></li>
+              <li><Link href="/industries/ecommerce" className="hover:text-emerald-400 transition-colors">Ecommerce</Link></li>
+              <li><Link href="/industries/real-estate" className="hover:text-emerald-400 transition-colors">Real Estate</Link></li>
             </ul>
           </div>
 
@@ -83,11 +84,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="w-5 h-5 flex-shrink-0 text-emerald-400" />
-                <a href="mailto:getvalue.online@gmail.com" className="hover:text-emerald-400 transition-colors text-sm">
-                  getvalue.online@gmail.com
-                </a>
-                <a href="mailto:joshuadabs@gmail.com" className="hover:text-emerald-400 transition-colors text-sm">
-                  joshuadabs@gmail.com
+                <a href="mailto:info@reputebull.com" className="hover:text-emerald-400 transition-colors text-sm">
+                  info@reputebull.com
                 </a>
               </li>
             </ul>
@@ -96,7 +94,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
-          <p>© 2026 GetValue. All rights reserved.</p>
+          <p>© 2026 REPUTEBULL. All rights reserved.</p>
           <div className="flex gap-6">
             <Link href="/privacy" className="hover:text-emerald-400 transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-emerald-400 transition-colors">Terms of Service</Link>

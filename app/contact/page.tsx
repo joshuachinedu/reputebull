@@ -68,124 +68,133 @@ export default function ContactPage() {
                     </div>
                   </div>
                 ) : (
-                  <form onSubmit={handleSubmit} className="space-y-6">
-                    <div className="grid md:grid-cols-2 gap-6">
-                      <div>
-                        <label htmlFor="name" className="block text-sm font-medium mb-2">
-                          Your Name *
-                        </label>
-                        <input
-                          type="text"
-                          id="name"
-                          name="name"
-                          required
-                          value={formData.name}
-                          onChange={handleChange}
-                          className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:border-emerald-500 transition-colors"
-                          placeholder="John Doe"
-                        />
+                  <>
+                    <form onSubmit={handleSubmit} className="space-y-6">
+                      <div className="grid md:grid-cols-2 gap-6">
+                        <div>
+                          <label htmlFor="name" className="block text-sm font-medium mb-2">
+                            Your Name *
+                          </label>
+                          <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            required
+                            value={formData.name}
+                            onChange={handleChange}
+                            className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:border-emerald-500 transition-colors"
+                            placeholder="John Doe"
+                          />
+                        </div>
+
+                        <div>
+                          <label htmlFor="businessName" className="block text-sm font-medium mb-2">
+                            Business Name *
+                          </label>
+                          <input
+                            type="text"
+                            id="businessName"
+                            name="businessName"
+                            required
+                            value={formData.businessName}
+                            onChange={handleChange}
+                            className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:border-emerald-500 transition-colors"
+                            placeholder="Taste of Lagos Restaurant"
+                          />
+                        </div>
+                      </div>
+
+                      <div className="grid md:grid-cols-2 gap-6">
+                        <div>
+                          <label htmlFor="email" className="block text-sm font-medium mb-2">
+                            Email Address *
+                          </label>
+                          <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                            value={formData.email}
+                            onChange={handleChange}
+                            className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:border-emerald-500 transition-colors"
+                            placeholder="john@business.com"
+                          />
+                        </div>
+
+                        <div>
+                          <label htmlFor="phone" className="block text-sm font-medium mb-2">
+                            Phone Number *
+                          </label>
+                          <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            required
+                            value={formData.phone}
+                            onChange={handleChange}
+                            className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:border-emerald-500 transition-colors"
+                            placeholder="+234 XXX XXX XXXX"
+                          />
+                        </div>
                       </div>
 
                       <div>
-                        <label htmlFor="businessName" className="block text-sm font-medium mb-2">
-                          Business Name *
+                        <label htmlFor="budget" className="block text-sm font-medium mb-2">
+                          Monthly Marketing Budget *
                         </label>
-                        <input
-                          type="text"
-                          id="businessName"
-                          name="businessName"
+                        <select
+                          id="budget"
+                          name="budget"
                           required
-                          value={formData.businessName}
+                          value={formData.budget}
                           onChange={handleChange}
-                          className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:border-emerald-500 transition-colors"
-                          placeholder="Taste of Lagos Restaurant"
-                        />
-                      </div>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 gap-6">
-                      <div>
-                        <label htmlFor="email" className="block text-sm font-medium mb-2">
-                          Email Address *
-                        </label>
-                        <input
-                          type="email"
-                          id="email"
-                          name="email"
-                          required
-                          value={formData.email}
-                          onChange={handleChange}
-                          className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:border-emerald-500 transition-colors"
-                          placeholder="john@business.com"
-                        />
+                          className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:border-emerald-500 transition-colors text-white"
+                        >
+                          <option value="">Select your budget range</option>
+                          <option value="under-200k">Under ₦200,000</option>
+                          <option value="200k-500k">₦200,000 - ₦500,000</option>
+                          <option value="500k-1m">₦500,000 - ₦1,000,000</option>
+                          <option value="1m-2m">₦1,000,000 - ₦2,000,000</option>
+                          <option value="2m-plus">₦2,000,000+</option>
+                        </select>
                       </div>
 
                       <div>
-                        <label htmlFor="phone" className="block text-sm font-medium mb-2">
-                          Phone Number *
+                        <label htmlFor="message" className="block text-sm font-medium mb-2">
+                          Tell Us About Your Goals *
                         </label>
-                        <input
-                          type="tel"
-                          id="phone"
-                          name="phone"
+                        <textarea
+                          id="message"
+                          name="message"
                           required
-                          value={formData.phone}
+                          rows={6}
+                          value={formData.message}
                           onChange={handleChange}
-                          className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:border-emerald-500 transition-colors"
-                          placeholder="+234 XXX XXX XXXX"
-                        />
+                          className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:border-emerald-500 transition-colors resize-none"
+                          placeholder="What are your main business goals? What challenges are you facing? What services are you interested in?"
+                        ></textarea>
                       </div>
-                    </div>
 
-                    <div>
-                      <label htmlFor="budget" className="block text-sm font-medium mb-2">
-                        Monthly Marketing Budget *
-                      </label>
-                      <select
-                        id="budget"
-                        name="budget"
-                        required
-                        value={formData.budget}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:border-emerald-500 transition-colors"
+                      <button
+                        type="submit"
+                        className="w-full px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-black font-bold rounded-lg transition-all duration-300 flex items-center justify-center gap-2 group"
                       >
-                        <option value="">Select your budget range</option>
-                        <option value="under-200k">Under ₦200,000</option>
-                        <option value="200k-500k">₦200,000 - ₦500,000</option>
-                        <option value="500k-1m">₦500,000 - ₦1,000,000</option>
-                        <option value="1m-2m">₦1,000,000 - ₦2,000,000</option>
-                        <option value="2m-plus">₦2,000,000+</option>
-                      </select>
-                    </div>
+                        Send Message
+                        <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                      </button>
 
-                    <div>
-                      <label htmlFor="message" className="block text-sm font-medium mb-2">
-                        Tell Us About Your Goals *
-                      </label>
-                      <textarea
-                        id="message"
-                        name="message"
-                        required
-                        rows={6}
-                        value={formData.message}
-                        onChange={handleChange}
-                        className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:outline-none focus:border-emerald-500 transition-colors resize-none"
-                        placeholder="What are your main business goals? What challenges are you facing? What services are you interested in?"
-                      ></textarea>
-                    </div>
+                      <p className="text-sm text-gray-500 text-center">
+                        By submitting this form, you agree to our privacy policy. We'll never share your information.
+                      </p>
+                    </form>
 
-                    <button
-                      type="submit"
-                      className="w-full px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-black font-bold rounded-lg transition-all duration-300 flex items-center justify-center gap-2 group"
-                    >
-                      Send Message
-                      <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                    </button>
-
-                    <p className="text-sm text-gray-500 text-center">
-                      By submitting this form, you agree to our privacy policy. We'll never share your information.
-                    </p>
-                  </form>
+                    <style jsx>{`
+                      select option {
+                        background-color: #0a0a0a;
+                        color: #ffffff;
+                      }
+                    `}</style>
+                  </>
                 )}
               </div>
             </div>
@@ -215,8 +224,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <div className="font-semibold mb-1">Email Us</div>
-                      <a href="mailto:getvalue.online@gmail.com" className="text-gray-400 hover:text-emerald-400 transition-colors break-all">
-                        getvalue.online@gmail.com
+                      <a href="mailto:info@reputebull.com" className="text-gray-400 hover:text-emerald-400 transition-colors break-all">
+                        info@reputebull.com
                       </a>
                     </div>
                   </div>

@@ -18,19 +18,15 @@ export default function HomePage() {
           <div className="text-center space-y-8 animate-fade-in-up">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full text-emerald-400 text-sm font-medium mb-6">
               <span className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
-GetValue - getvalue.online • Abuja Based
+REPUTEBULL - Be seen. Be valued. Be Paid.
             </div>
             
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight">
-Revenue Growth with
-              <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-blue-500">
-                GetValue
-              </span>
+Revenue Growth with REPUTEBULL, Not Marketing Promises
             </h1>
 
             <p className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-GetValue: Strategic digital marketing that delivers measurable results for restaurants, hotels, pharmacies, and growth-focused businesses across Nigeria.
+REPUTEBULL: Strategic digital marketing and reputation management for businesses, public figures, political figures, and service members worldwide.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">

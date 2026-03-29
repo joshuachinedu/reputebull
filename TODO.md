@@ -1,4 +1,4 @@
-# Rebranding to GetValue - TODO
+# Rebranding to REPUTEBULL - TODO
 
 ## Plan Breakdown & Progress
 
